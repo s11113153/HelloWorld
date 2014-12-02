@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+  <string name="app_name">Demo</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+  <string name="different">相差</string>
+  <string name="get">得到</string>
+  <string name="consumer">消耗</string>
+  <string name="eating">進食</string>
+  <string name="motion">運動</string>
+  <string name="record">記錄表</string>
+  <string name="join_record">加入紀錄</string>
+  
+</resources>
