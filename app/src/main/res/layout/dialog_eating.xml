@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/demo_backgroud">
+
+  <Spinner
+    android:layout_centerHorizontal="true"
+    android:spinnerMode="dropdown"
+    android:id="@+id/sp_classification"
+    android:layout_marginTop="10dp"
+    android:layout_width="180dp"
+    android:layout_height="60dp"/>
+
+  <Spinner
+    android:layout_centerHorizontal="true"
+    android:spinnerMode="dropdown"
+    android:layout_below="@+id/sp_classification"
+    android:id="@+id/sp_items"
+    android:layout_marginTop="15dp"
+    android:layout_width="180dp"
+    android:layout_height="60dp"/>
+
+  <FrameLayout
+    android:layout_marginLeft="20dp"
+    android:layout_below="@+id/sp_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+      android:scrollbars="none"
+      android:id="@+id/listView"
+      android:layout_marginTop="10dp"
+      android:layout_width="240dp"
+      android:layout_height="match_parent"/>
+    <LinearLayout
+      android:paddingRight="20dp"
+      android:paddingBottom="20dp"
+      android:layout_gravity="right|bottom"
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <Button
+        android:id="@+id/btn_join_list"
+        android:layout_marginTop="35dp"
+        android:text="@string/join_list"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+      <Button
+        android:id="@+id/btn_save"
+        android:text="@string/save"
+        android:layout_marginTop="5dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+      <Button
+        android:id="@+id/btn_motion"
+        android:layout_marginTop="5dp"
+        android:text="@string/motion"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"/>
+      <TextView
+        android:id="@+id/tv_result"
+        android:layout_marginTop="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/result"
+        android:textColor="@color/yellow"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+    </LinearLayout>
+  </FrameLayout>
+</RelativeLayout>

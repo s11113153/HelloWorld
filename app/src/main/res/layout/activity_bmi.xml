@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+
+  <TextView
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:textSize="36dp"
+    android:text="BMI Calculate"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+
+  <LinearLayout
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:textSize="18sp"
+      android:text="Input you Height : "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <EditText
+      android:numeric="integer"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/et_input_h"
+      android:layout_width="80dp"
+      android:layout_height="40sp"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+      android:textSize="18sp"
+      android:text="Input you Width  : "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+    <EditText
+      android:numeric="integer"
+      android:layout_marginLeft="10dp"
+      android:id="@+id/et_input_w"
+      android:layout_width="80dp"
+      android:layout_height="40sp"/>
+  </LinearLayout>
+
+  <Button
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center"
+    android:text="Do calculate"
+    android:id="@+id/btn_calculate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+  <TextView
+    android:textColor="@color/yellow"
+    android:layout_marginTop="40dp"
+    android:visibility="invisible"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:id="@+id/tv_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
