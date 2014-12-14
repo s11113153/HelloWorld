@@ -75,33 +75,33 @@
 
   <LinearLayout
     android:gravity="center_horizontal"
-    android:layout_marginTop="60dp"
+    android:layout_marginTop="20dp"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <Button
-      android:layout_marginTop="10dp"
+      android:background="@drawable/bg_eat"
+      android:layout_marginTop="25dp"
       android:id="@+id/btn_eating"
-      android:text="@string/eating"
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"/>
+      android:layout_width="120dp"
+      android:layout_height="45dp"/>
     <Button
-      android:layout_marginTop="10dp"
+      android:background="@drawable/bg_motation"
+      android:layout_marginTop="25dp"
       android:id="@+id/btn_motion"
-      android:text="@string/motion"
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"/>
+      android:layout_width="120dp"
+      android:layout_height="45dp"/>
     <Button
-      android:layout_marginTop="10dp"
+      android:background="@drawable/bg_record"
+      android:layout_marginTop="25dp"
       android:id="@+id/btn_record"
-      android:text="@string/record"
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"/>
+      android:layout_width="120dp"
+      android:layout_height="45dp"/>
     <Button
-      android:layout_marginTop="10dp"
+      android:layout_marginTop="25dp"
       android:id="@+id/btn_bmi"
-      android:text="BMI"
-      android:layout_width="150dp"
-      android:layout_height="wrap_content"/>
+      android:background="@drawable/bg_bmi"
+      android:layout_width="120dp"
+      android:layout_height="45dp"/>
   </LinearLayout>
 </LinearLayout>
