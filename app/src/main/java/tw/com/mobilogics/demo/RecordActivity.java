@@ -108,4 +108,10 @@ public class RecordActivity extends Activity {
       return mViews.get(position);
     }
   }
+
+  @Override
+  protected void onPause() {
+    super.onPause();
+    total.clear();
+  }
 }
