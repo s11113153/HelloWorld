@@ -41,7 +41,21 @@ public class BMIActivity extends RoboActivity implements View.OnClickListener {
         return;
       }
       h = Math.pow(h / 100d, 2);
-      String message = "Obtain Your Information : " + String.valueOf(w / h).substring(0,4);
+      double bmi = w / h;
+      String message = "Obtain Your Information : " + String.valueOf(bmi).substring(0,4).concat("\n");
+      if (bmi < 18.5) {
+        message += "體重過輕";
+      } else if (18.5 <= bmi && bmi < 24) {
+        message += "健康體位";
+      } else if (24 <= bmi && bmi < 27) {
+        message += "過重";
+      } else if (27 <= bmi && bmi < 30) {
+        message += "輕度肥胖";
+      } else if (30 <= bmi && bmi < 35) {
+        message += "中度肥胖";
+      } else if (bmi >= 35) {
+        message += "重度肥胖";
+      }
       setText(message).setVisibility(View.VISIBLE);
     } catch (NumberFormatException e) {
       showMsg();
@@ -57,8 +71,6 @@ public class BMIActivity extends RoboActivity implements View.OnClickListener {
     mTvResult.setText(msg);
     return mTvResult;
   }
-
-
 
   @TargetApi(19)
   public static class HandleNull {
