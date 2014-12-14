@@ -40,8 +40,36 @@ public class MotionDialog extends RoboActivity
   @InjectView(R.id.tv_show_time) TextView mTvShowTime;
 
   private final String TAG = MotionDialog.class.getName();
-  private static final String[] sports = { "走路", "跑步", "騎腳踏車", "游泳", "跳繩", "下樓梯", "上樓梯" };
-  private static final double [] consumers = { 3.5, 9.5, 4.5, 7d, 10d, 3d, 8d };
+  private static final String[] sports = {
+    "走路(慢走)",
+    "走路(快走)",
+    "跑步(慢跑)",
+    "跑步(中跑)",
+    "跑步(快跑)",
+    "騎腳踏車(一般)",
+    "騎腳踏車(快)",
+    "游泳(慢)",
+    "游泳(較快)",
+    "跳繩(慢)",
+    "跳繩(較快)",
+    "下樓梯",
+    "上樓梯"
+  };
+  private static final double [] consumers = {
+    3.5,
+    5.5,
+    8d,
+    13d,
+    17d,
+    4d,
+    8.5,
+    6.5,
+    10d,
+    8.5,
+    12.5,
+    3d,
+    8d
+  };
 
   private static List<String> mList = new ArrayList();
   private MotionAdapter mAdapter;
