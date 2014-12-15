@@ -23,6 +23,7 @@
     <activity android:name=".RecordActivity"/>
     <activity android:name=".BMIActivity"
               android:theme="@android:style/Theme.Dialog"/>
+    <activity android:name=".TargetActivity"/>
   </application>
 
 </manifest>

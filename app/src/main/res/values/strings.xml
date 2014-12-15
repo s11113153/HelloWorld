@@ -4,7 +4,7 @@
   <string name="app_name">卡路里，Follow Me</string>
   <string name="hello_world">Hello world!</string>
   <string name="action_settings">Settings</string>
-  <string name="different">相差</string>
+  <string name="today_different">今日相差</string>
   <string name="get">得到</string>
   <string name="consumer">消耗</string>
   <string name="eating">進食</string>

@@ -27,6 +27,7 @@ public class MainActivity
   @InjectView(R.id.btn_motion) Button mBtnMotion;
   @InjectView(R.id.btn_record) Button mBtnRecord;
   @InjectView(R.id.btn_bmi) Button mBtnBmi;
+  @InjectView(R.id.btn_target) Button mbtnTarget;
 
   SharedPreferences mSharedPref;
 
@@ -105,6 +106,7 @@ public class MainActivity
     mBtnMotion.setOnClickListener(this);
     mBtnRecord.setOnClickListener(this);
     mBtnBmi.setOnClickListener(this);
+    mbtnTarget.setOnClickListener(this);
   }
 
   @Override
@@ -121,6 +123,9 @@ public class MainActivity
         break;
       case R.id.btn_bmi :
         startActivity(new Intent(this, BMIActivity.class));
+        break;
+      case R.id.btn_target :
+        startActivity(new Intent(this, TargetActivity.class));
         break;
     }
   }
