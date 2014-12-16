@@ -60,6 +60,7 @@ public class EatingDialog extends RoboActivity
     mBtnMotion.setOnClickListener(this);
     mBtnSave.setOnClickListener(this);
     mListView.setAdapter(mAdapter = new MyAdapter(this, mMap));
+    mBtnMotion.setVisibility(View.INVISIBLE);
   }
 
   @Override

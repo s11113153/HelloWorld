@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -150,8 +151,16 @@ public class MainActivity
       }
     } cursor.close();
     if (get == 0 && loss == 0) return;
+    mTvGet.setTextColor(Color.BLUE);
     mTvGet.setText("\t" + String.valueOf(get));
+    mTvConsumer.setTextColor(Color.RED);
     mTvConsumer.setText(String.valueOf("\t" + loss * -1));
-    mTvDifferentValue.setText(String.valueOf(get - loss * -1));
+    int result = get - loss * -1;
+    if (result >= 0) {
+      mTvDifferentValue.setTextColor(Color.BLUE);
+    } else {
+      mTvDifferentValue.setTextColor(Color.RED);
+    }
+    mTvDifferentValue.setText(String.valueOf(result));
   }
 }

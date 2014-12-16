@@ -148,12 +148,22 @@
         android:layout_height="30dp"/>
     </RelativeLayout>
 
-    <Button
-      android:id="@+id/btn_target"
-      android:text="Target"
-      android:layout_width="160dp"
-      android:layout_height="50dp"/>
-
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <Button
+        android:id="@+id/btn_target"
+        android:text="目標"
+        android:layout_width="160dp"
+        android:layout_height="50dp"/>
+      <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@+id/btn_target"
+        android:background="@drawable/bg_target"
+        android:layout_width="40dp"
+        android:layout_height="30dp"/>
+    </RelativeLayout>
 
   </LinearLayout>
 </LinearLayout>

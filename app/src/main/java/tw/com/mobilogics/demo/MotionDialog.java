@@ -78,6 +78,7 @@ public class MotionDialog extends RoboActivity
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    setTitle("設定運動");
     setContentView(R.layout.dialog_motion);
     initConfig();
     initSportsData();
@@ -213,6 +214,12 @@ public class MotionDialog extends RoboActivity
       textView.setText(mList.get(position));
       return view;
     }
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+    mList.clear();
   }
 
   @Override
