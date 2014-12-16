@@ -2,12 +2,12 @@ package tw.com.mobilogics.demo;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -37,12 +37,14 @@ public class EatingDialog extends RoboActivity
   @InjectView(R.id.btn_motion) Button mBtnMotion;
   @InjectView(R.id.tv_result) TextView mTvResult;
   @InjectView(R.id.btn_save) Button mBtnSave;
+  @InjectView(R.id.et_quantity) EditText mEtQuantity;
 
   private static String[] srrClassIfication;
   private static int[] arrClassInication;
 
   private HashMap<String, Integer> mMap = new HashMap();
-  private MyAdapter mAdapter;
+  private HashMap<String, Integer> mQuantityMap = new HashMap();
+  private EatingAdapter mAdapter;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +61,7 @@ public class EatingDialog extends RoboActivity
     mBtnJoinList.setOnClickListener(this);
     mBtnMotion.setOnClickListener(this);
     mBtnSave.setOnClickListener(this);
-    mListView.setAdapter(mAdapter = new MyAdapter(this, mMap));
+    mListView.setAdapter(mAdapter = new EatingAdapter(this, mMap, mQuantityMap));
     mBtnMotion.setVisibility(View.INVISIBLE);
   }
 
@@ -67,13 +69,21 @@ public class EatingDialog extends RoboActivity
   public void onClick(View v) {
     switch (v.getId()) {
       case R.id.btn_join_list :
+        int quantity = 1;
+        try {
+          quantity = Integer.parseInt(mEtQuantity.getText().toString());
+        } catch (NumberFormatException e) {
+          quantity = 1;
+        }
         int position = mSpItems.getSelectedItemPosition();
         String item = mSpItems.getItemAtPosition(position).toString();
         String name = item.split(":")[0];
         int calories = Integer.parseInt(item.split("熱量")[1]);
-        mMap.put(name, calories);
-        mListView.setAdapter(new MyAdapter(this, mMap));
+        mMap.put(name, calories * quantity);
+        mQuantityMap.put(name, quantity);
+        mListView.setAdapter(new EatingAdapter(this, mMap, mQuantityMap));
         doCalculateCalories();
+        mEtQuantity.setText("");
         break;
       case R.id.btn_motion :
         startActivity(new Intent(this, MotionDialog.class));

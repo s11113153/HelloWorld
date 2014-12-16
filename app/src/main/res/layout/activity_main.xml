@@ -84,14 +84,16 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <Button
+        android:gravity="right|center_vertical"
+        android:paddingRight="40dp"
         android:id="@+id/btn_eating"
         android:text="@string/eating"
         android:layout_width="160dp"
         android:layout_height="50dp"/>
       <ImageView
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@+id/btn_eating"
+        android:layout_marginLeft="40dp"
+        android:layout_alignLeft="@+id/btn_eating"
         android:background="@drawable/bg_eat"
         android:layout_width="40dp"
         android:layout_height="30dp"/>
@@ -101,14 +103,16 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <Button
+        android:gravity="right|center_vertical"
+        android:paddingRight="40dp"
         android:id="@+id/btn_motion"
         android:text="@string/motion"
         android:layout_width="160dp"
         android:layout_height="50dp"/>
       <ImageView
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@+id/btn_motion"
+        android:layout_marginLeft="40dp"
+        android:layout_alignLeft="@+id/btn_motion"
         android:background="@drawable/bg_motation"
         android:layout_width="40dp"
         android:layout_height="30dp"/>
@@ -118,14 +122,16 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <Button
+        android:gravity="right|center_vertical"
+        android:paddingRight="20dp"
         android:id="@+id/btn_record"
         android:text="@string/record"
         android:layout_width="160dp"
         android:layout_height="50dp"/>
       <ImageView
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@+id/btn_record"
+        android:layout_marginLeft="40dp"
+        android:layout_alignLeft="@+id/btn_record"
         android:background="@drawable/bg_record"
         android:layout_width="40dp"
         android:layout_height="30dp"/>
@@ -135,14 +141,16 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <Button
+        android:gravity="right|center_vertical"
+        android:paddingRight="40dp"
         android:id="@+id/btn_bmi"
         android:text="BMI"
         android:layout_width="160dp"
         android:layout_height="50dp"/>
       <ImageView
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@+id/btn_bmi"
+        android:layout_marginLeft="40dp"
+        android:layout_alignLeft="@+id/btn_bmi"
         android:background="@drawable/bg_bmi"
         android:layout_width="40dp"
         android:layout_height="30dp"/>
@@ -152,14 +160,16 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
       <Button
+        android:gravity="right|center_vertical"
+        android:paddingRight="40dp"
         android:id="@+id/btn_target"
         android:text="目標"
         android:layout_width="160dp"
         android:layout_height="50dp"/>
       <ImageView
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@+id/btn_target"
+        android:layout_marginLeft="40dp"
+        android:layout_alignLeft="@+id/btn_target"
         android:background="@drawable/bg_target"
         android:layout_width="40dp"
         android:layout_height="30dp"/>
