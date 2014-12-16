@@ -42,7 +42,7 @@ public class BMIActivity extends RoboActivity implements View.OnClickListener {
       }
       h = Math.pow(h / 100d, 2);
       double bmi = w / h;
-      String message = "Obtain Your Information : " + String.valueOf(bmi).substring(0,4).concat("\n");
+      String message = "你的BMI為 : " + String.valueOf(bmi).substring(0,4).concat("\n");
       if (bmi < 18.5) {
         message += "體重過輕";
       } else if (18.5 <= bmi && bmi < 24) {

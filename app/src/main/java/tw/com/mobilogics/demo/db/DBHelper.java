@@ -26,6 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private Table() {
     }
 
+    // 運動分類
     public abstract static class ClassIfication {
       public static String tableName = "_ClassIfication";
       public static String primaryKey = "_PrimaryKey";
@@ -49,6 +50,7 @@ public class DBHelper extends SQLiteOpenHelper {
       }
     }
 
+    // 食物分類
     public abstract static class FoodItems {
       public static String tableName = "_FoodItem";
       public static String primaryKey = "_PrimaryKey";

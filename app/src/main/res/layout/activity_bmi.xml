@@ -10,7 +10,7 @@
     android:layout_marginTop="30dp"
     android:gravity="center"
     android:textSize="36dp"
-    android:text="BMI Calculate"
+    android:text="BMI計算"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"/>
 
@@ -22,7 +22,7 @@
     android:layout_height="wrap_content">
     <TextView
       android:textSize="18sp"
-      android:text="Input you Height : "
+      android:text="請輸入身高(cm) : "
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
     <EditText
@@ -41,7 +41,7 @@
     android:layout_height="wrap_content">
     <TextView
       android:textSize="18sp"
-      android:text="Input you Width  : "
+      android:text="請輸入體重(kg) : "
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
     <EditText
@@ -55,7 +55,7 @@
   <Button
     android:layout_marginTop="50dp"
     android:layout_gravity="center"
-    android:text="Do calculate"
+    android:text="我想知道答案"
     android:id="@+id/btn_calculate"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
